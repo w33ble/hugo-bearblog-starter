@@ -1,17 +1,21 @@
 baseURL = "https://w33ble.github.io/hugo-site"
 
 # site metadata
-metaDataFormat = "yaml"
 author = "w33ble"
 canonifyURLs = true
 languageCode = "en-us"
+metaDataFormat = "yaml"
 pygmentsstyle = "monokai"
-title = "Hugo Site"
+title = "My Hugo Site"
 
 # Theme settings
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 theme = "hugo-bearblog"
+
+[permalinks]
+blog = "/:slug"
+tags = "/tags/:slug"
 
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
